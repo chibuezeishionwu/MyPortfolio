@@ -1,0 +1,277 @@
+/* Custom Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+h1, h2 {
+    font-family: 'Courgette', cursive;
+    margin: 10px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+
+.navbar a {
+    font-size: 20px;
+}
+
+.hero-section {
+    background-color: #1c1c1c;
+    padding: 100px 0;
+    border-top: 3px solid #555;
+    border-bottom: 3px solid #555;
+    position: relative;
+}
+
+.hero-section img {
+    border: 7px solid #555;
+}
+
+.hero-section h1 {
+    font-size: 75px;
+    padding-bottom: 6px;
+}
+.hero-section h5 {
+    font-size: 40px;
+    padding-left: 10px;
+}
+.about-me-section p {
+    font-size: 23px;
+}
+
+.about-me-section {
+    background-color: #2c2c2c;
+}
+
+.projects-section {
+    background-color: #1c1c1c;
+    border-top: 3px solid #555;
+    border-bottom: 3px solid #555;
+}
+
+.contact-section {
+    background-color: #2c2c2c;
+}
+
+.section-title {
+    color: #fff;
+}
+
+.footer-section {
+    background-color: #1c1c1c;
+    border-top: 3px solid #555;
+}
+
+.card {
+    background-color: #2c2c2c;
+    border: 3px solid #555;
+}
+
+.card-title,
+.card-text {
+    color: #fff;
+}
+.contact-list li {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+}
+.contact-list a {
+    padding-right: 15px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+.contact-list a:hover {
+   opacity: 0.6;
+  }
+
+.projects-code li {
+    display: inline-block;
+    justify-content: center;
+    padding-right: 15px;
+    font-size: 16px;
+    color: #fff;
+}
+.projects-code a {
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+.projects-code a:hover {
+   opacity: 0.6;
+  }
+
+/* Project cards */
+.card {
+    position: relative;
+    height: 100%
+}
+.card-body {
+    background: rgb(0,0,0,0.8);
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+.hover {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+.hover:hover {
+    opacity: 0.6;
+}
+
+/* Additional CSS for Light Theme */
+
+.light-hero-section {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    border-top: 3px solid #555;
+    border-bottom: 3px solid #555;
+}
+
+.light-projects-section {
+    background-color: #f5f5f5;
+    border-top: 3px solid #555;
+    border-bottom: 3px solid #555;
+}
+
+.light-footer-section{
+    background-color: #f5f5f5;
+    border-top: 3px solid #555;
+}
+
+.light-theme {
+    background-color: #C0C0C0;
+}
+
+.text-dark {
+    color: #333 !important; /* Ensure text remains dark */
+}
+
+/* Toggle Switch Styles */
+.toggle-container {
+    position: absolute;
+    width: 11%;
+    left: 16%;
+    top: 80%;
+}
+.toggle-container h4 {
+    padding-bottom: 5%;
+}
+
+.toggle-container p {
+    font-size: 17px;
+    padding-bottom: 13%;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2c2c2c;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-btn {
+    background-color: #B8B8B8;
+}
+
+.toggle-checkbox:checked + .toggle-btn:before {
+    transform: translateX(26px);
+}
+
+.toggle-label {
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Media queries */
+
+@media screen and (min-width:769px) and (max-width: 1500px) {
+    .toggle-container {
+        position: absolute;
+        width: 25%;
+        left: 16%;
+        top: 80%;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 900px) {
+    .card-body h2 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (min-width:491px) and (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 55px;
+        padding-bottom: 6px;
+    }
+    .hero-section h5 {
+        font-size: 30px;
+        padding-left: 10px;
+    }
+    .toggle-container {
+        width: 30%;
+        left: 35%;
+        top: 91%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .name {
+        padding: 30px;
+    }
+    .hero-section h1 {
+        font-size: 40px;
+        padding-bottom: 6px;
+    }
+    .hero-section h5 {
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .toggle-container {
+        width: 50%;
+        left: 30%;
+        top: 90%;
+    }
+}
